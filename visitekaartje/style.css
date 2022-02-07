@@ -1,0 +1,30 @@
+body { display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    background-color: rgb(175, 215, 250);
+    height: 7cm;
+    width: 12cm;
+    
+}
+header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+img {
+    width: 100%;
+}
+
+
