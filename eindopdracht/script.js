@@ -10,7 +10,7 @@ getData()
 
 function getData() {
     // 1. variables
-    const list = $('ul')
+    const list = document.querySelector('ul')
 
     // 2. the story
 
@@ -18,16 +18,21 @@ function getData() {
     fetch(endpoint).then(function(response) {
         return response.json()
     })
-    .then(function(giphies){
-        console.log(giphies)
-        list.insertAdjacentHTML('afterbegin', `<li>${giphies.data[0].text}</li>`)
+
+    .then(quotes =>{
+        console.log(quotes.data)
+        quotes.data.forEach(data => {
+        list.insertAdjacentHTML('afterbegin', 
+        `<li>
+        <p>${data.text}</p>
+        <div>
+        <img src='${data.avatar}' alt='profielfoto'>
+        <h2>${data.name}</h2>
+        </div>
+        
+        </li>`)
     })
 
-    // 3. functions
 
-}
-
-function $(element) {
-    return document.querySelector(element)
-
+})
 }

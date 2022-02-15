@@ -1,0 +1,19 @@
+img {
+    height: 50px;
+    width:auto;
+}
+
+h2 {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+li {
+    background-color: lightblue;
+    list-style-type: none;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
