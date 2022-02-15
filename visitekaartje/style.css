@@ -1,30 +1,111 @@
-body { display:flex;
-    height:100vh;
-    justify-content: center;
-    align-items: center;
+body {
+    background-image: url("img/maxim-berg-l1pgMU5AjLc-unsplash.jpg");
+    background-size:cover;
+}
+main {
+border-style: solid;
+border-width: 4px;
+border-color:rgb(151, 116, 146);
 }
 
+header {
+    font-family:'Times New Roman', Times, serif;
+    font-size:60px;
+    text-align:center;
+    padding-top: 0.3em;
+    padding-bottom:0.3em;
+    background-color: rgb(151, 116, 146);
+    border-radius: 30px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 
-section {
-    background-color: rgb(175, 215, 250);
-    height: 7cm;
-    width: 12cm;
+h1 {font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(151, 116, 146);
+    background-color:black;
+    padding-top: 0.4em;
+    padding-bottom:0.4em;
+    border-radius: 15px;
+    margin-left: 2em;
+    margin-right:1em;
+}
+
+p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    padding-left: 1em;
+    padding-right:1em;
     
 }
-header {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
+
+
+div:first-of-type {
+    float: left;
+  height: 200px;
+  width: 200px;
+  shape-outside: circle();
+
+}
+
+div:nth-of-type(2) {
+    float: left;
+  height: 150px;
+  width: 150px;
+  shape-outside: circle();
+  clip-path: circle();
+  background:pink;
+
 }
 
 
-img {
-    width: 100%;
+div:nth-of-type(3) {
+    float: left;
+shape-outside: polygon(0 0, 0 300px, 200px 300px);
+clip-path: polygon(0 0, 0 300px, 200px 300px);
+height: 200px;
+width: 200px;
+background:aqua;
+shape-margin: 20px;
+}
+
+img:first-of-type {
+    float: left;
+    height: 150px;
+    width: 150px;
+    shape-outside: url('img/Golden-Star-PNG-Image-File.png');
+    shape-margin: 10px;
+    
+
+  
+}
+
+img:nth-of-type(2) {
+    float: left;
+    height: 300px;
+    width: 150px;
+    shape-outside: url('img/Cartoon-Man-Transparent-Image.png');
+    shape-margin: 10px;
+
+  
 }
 
 
+  section > div:last-of-type{
+    width:200px;
+    height:200px;
+    background:#ea00ff;
+    float:left;
+    margin-right:5px;
+    margin-left: 5px;
+    shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
+    clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
+    transition: clip-path 1s, shape-outside 1s;
+  }
+  section:hover div:last-of-type {
+    shape-outside: polygon(0% 0%, 100% 50%, 100% 50%, 0 100%);
+    clip-path:polygon(0% 0%, 100% 50%, 100% 50%, 0 100%);  
+  }
