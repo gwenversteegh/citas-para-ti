@@ -20,8 +20,6 @@ export function getData() {
     })
 
     .then(quotes =>{
-        console.dir(quotes.data[12].text)
-        quotes.data = quotes.data.slice (0, -2)
         quotes.data.forEach(data => {
         list.insertAdjacentHTML('afterbegin', 
         `<li>
