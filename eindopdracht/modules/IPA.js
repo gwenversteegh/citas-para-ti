@@ -1,6 +1,6 @@
 
 // 1. variables (aka bindings), on top of global cope
-const endpoint = 'https://quote.api.fdnd.nl/v1/quote'
+export const endpoint = 'https://quote.api.fdnd.nl/v1/quote'
 
 
 // 2. the story
@@ -8,7 +8,7 @@ getData()
 
 // 3. functions
 
-function getData() {
+export function getData() {
     // 1. variables
     const list = document.querySelector('ul')
 
@@ -20,7 +20,8 @@ function getData() {
     })
 
     .then(quotes =>{
-        console.log(quotes.data)
+        console.dir(quotes.data[12].text)
+        quotes.data = quotes.data.slice (0, -2)
         quotes.data.forEach(data => {
         list.insertAdjacentHTML('afterbegin', 
         `<li>
@@ -29,10 +30,9 @@ function getData() {
         <img src='${data.avatar}' alt='profielfoto'>
         <h2>${data.name}</h2>
         </div>
-        
         </li>`)
     })
 
-
 })
 }
+
