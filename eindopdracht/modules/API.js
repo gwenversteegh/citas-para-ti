@@ -20,15 +20,13 @@ export function getData() {
     })
 
     .then(quotes =>{
-        quotes.data = quotes.data.slice(0,-4);
+        quotes.data = quotes.data.slice(0,-5);
         quotes.data.forEach(data => {
         list.insertAdjacentHTML('afterbegin', 
         `<li>
-        <p>${data.text}</p>
-        <div>
         <img src='${data.avatar}' alt='profielfoto'>
         <h2>${data.name}</h2>
-        </div> 
+        <p>${data.text}</p>
         </li>`)
     })
 

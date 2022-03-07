@@ -1,3 +1,7 @@
+
+
+
+
 // const carouselSlide = document.querySelector('main section ul:first-of-type');
 // const carouselQuotes = document.querySelectorAll('main section ul:first-of-type li');
 
