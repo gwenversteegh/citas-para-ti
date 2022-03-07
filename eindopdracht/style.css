@@ -4,15 +4,42 @@ body {
     box-sizing: border-box;
     background-color:#545c8c;
 
+
 }
 
 
 header {
-    background-image:url(img/jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg);
-    background-size:150vw;
+    background-image: url(img/jordan-whitfield-sm3Ub_IJKQg-unsplash.jpg);
+    background-size:120vw;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 50vh;
+    min-height: 15vh;
+    height: 80vmin;
+    border-radius: 0 0 50em 0em ;
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    main { padding: 5em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main { padding: 1em;
+
+}
+}
+
+p {
+    text-align: center;
+    color: white; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #201c32;
+    padding: 8vw;
+    border-radius: 5em;
+    
+
 }
 
 header h1 {
@@ -24,6 +51,8 @@ main ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
+
     
 }
 
@@ -41,11 +70,28 @@ main ul li h2 {
     
 }
 
+
+@media screen and (min-width: 800px) {
+    p {
+      font-size: 35px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    p {
+     font-size: 25px;
+   }
+}
+
+
 main ul li p {
     color: white;
-    font-size: 5vw;
-    text-align: right;
     padding-right:5vw;
+    padding-left:5vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 100vw;
+
 
 }
 
