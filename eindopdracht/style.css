@@ -13,7 +13,7 @@ header {
     background-repeat: no-repeat;
     width: 100vw;
     min-height: 15vh;
-    height: 80vmin;
+    height: 70vmin;
     border-radius: 0 0 50em 0em ;
 }
 
@@ -26,6 +26,21 @@ header {
 @media screen and (max-width: 1000px) {
     main { padding: 1em;
     }
+}
+
+button {
+    margin:0;
+    padding:1em 2em;
+    position: absolute;
+    top: 20em;
+    right: 3em;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    text-shadow: 2px 2px 10px rgb(25, 3, 59);
+    background-color: rgb(184, 184, 248);
+    box-shadow:2px 2px 10px rgb(25, 3, 59) ;
+    cursor: pointer;
 }
 
 p {
