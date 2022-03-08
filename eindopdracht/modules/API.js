@@ -11,7 +11,7 @@ getData()
 
 
 export function getData() {
-    const quoteList = document.querySelector('ul')
+    const list = document.querySelector('ul')   //quoteList gebruik je verder nergens
     fetch(endpoint).then(function(response) {
         return response.json()
     })
@@ -20,7 +20,7 @@ export function getData() {
     quotes.data = quotes.data.slice(0,-5)
     renderData (quotes)
 })
-.catch((error) => {
+.catch((error) => {  //de error parameter wordt niet gebruikt
     console.log ("het gaat niet goed...")
     hideLoadingState()
     showErrorState()
@@ -43,12 +43,14 @@ export function renderData(quotes){
 
 
 // setTimeout(() => {window.location.hash = '#1';}, 1000)
-window.addEventListener('scroll', function() {
-    const liEl = document.querySelectorAll('ul li');
-    for(let i = 0; i < liEl.length; i++) {
+const liEl = document.querySelectorAll('ul li');
+for(let i = 0; i < liEl.length; i++) {
+    liEl[i].addEventListener('mouseover', function() {
+        console.log('hoi')
         let rect = liEl[i].getBoundingClientRect();
         if(rect.bottom > 0 && rect.bottom < 550) {
             window.location.hash = liEl[i].id;
         }
-    } 
-})
+    
+    })
+} 

@@ -4,7 +4,6 @@ body, html {
     box-sizing: border-box;
     background-color:#545c8c;
     scroll-behavior: smooth;
-
 }
 
 
@@ -16,7 +15,6 @@ header {
     min-height: 15vh;
     height: 80vmin;
     border-radius: 0 0 50em 0em ;
-
 }
 
 
@@ -27,8 +25,7 @@ header {
 
 @media screen and (max-width: 1000px) {
     main { padding: 1em;
-
-}
+    }
 }
 
 p {
@@ -37,9 +34,7 @@ p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #201c32;
     padding: 8vw;
-    border-radius: 5em;
-    
-
+    border-radius: 5em;  
 }
 
 header h1 {
@@ -51,8 +46,6 @@ main ul {
     list-style: none;
     margin: 0;
     padding: 0;
-
-
     
 }
 
@@ -70,7 +63,6 @@ main ul li h2 {
     
 }
 
-
 @media screen and (min-width: 800px) {
     p {
       font-size: 35px;
@@ -82,7 +74,6 @@ main ul li h2 {
      font-size: 25px;
    }
 }
-
 
 main ul li p {
     color: white;
@@ -96,13 +87,15 @@ main ul li p {
 }
 
 main ul li img {
-    width: 50vmin;
+    width: 30vmin;
     height: auto;
     object-fit:cover;
     padding-right: 0.5em;
     padding-bottom: 2em;
     filter: grayscale(100%);
-    cursor: pointer;
+    border-radius: 5em;
+
+
 
 
 }
@@ -115,99 +108,3 @@ main ul li img {
 
 
 
-/* ---------------------------------------- oud----------------------------------------------- */
- 
-/* main {
-    height: 100vh;
-    width: 100vw;
-    overflow:hidden;
-}
- 
- h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    color:black;
-}
-
-h2 {
-    font-size: 15px;
-    padding-left: 2em;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-}
- 
- p { 
-    color:white;
-    font-size: 8vw;
-    width: calc(50vw - 1.5em);
-    height: auto;
-    text-align:left;
-    margin-left: 0.75em;
-    margin-right: 0.75em;
-}
-
-
-
- img {
-    height: 50px;
-    width:auto;
-}
-
-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-main ul:first-of-type {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    width: 100vw;
-    height: 100%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    padding-inline-start: 1em;
-
-
-}
-
-main ul:first-of-type li {
-    scroll-snap-align: start;
-    width: 100%;
-    height: 100%;
-    padding-top: 5em;
-    list-style-type: none;
- 
-}
-
-main ul:first-of-type li:nth-of-type(1n) {
-    background-image:url(img/joel-filipe-KZa4fREZoKk-unsplash.jpg) ;
-    
-    
-}
-main ul:first-of-type li:nth-of-type(2n) {
-    background-image:url(img/kevin-borrill-7_N1zLrY7ns-unsplash.jpg);
-}
-
-main ul:first-of-type li:nth-of-type(3n) {
-    background-image:url(img/maria-orlova-Q3Ea7QQQ6MA-unsplash.jpg);
-}
-
-main ul:first-of-type li:nth-of-type(4n) {
-    background-image:url(img/matthew-mcbrayer-qD9xzm7yK9U-unsplash.jpg);
-}
-main ul:first-of-type li:nth-of-type(5n) {
-    background-image:url(img/max-saeling-m8nRxnGFWVc-unsplash.jpg);
-}
-
-
- 
-
-
- */
