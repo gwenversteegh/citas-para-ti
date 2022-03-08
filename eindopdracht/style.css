@@ -35,7 +35,7 @@ button {
     z-index: 1;
     top: -0;
     float: right;
-    font-size: 20px;
+    font-size: 3vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:white;
     text-shadow: 2px 2px 10px rgb(25, 3, 59);
@@ -75,7 +75,7 @@ main ul li{
 main ul li h2 {
     color: white;
     position: absolute;
-    font-size: 18px;
+    font-size: 3vw;
     text-shadow: 2px 2px 10px rgb(25, 3, 59);
 
     
