@@ -47,5 +47,6 @@ In this API there are inspirational quotes about webdesign. When there are new q
 
 
 ## Future plans
+- [x] Random quote option
 - [ ] Filter option
 - [ ] Detail page
