@@ -8,7 +8,8 @@ https://gwenversteegh.github.io/citas-para-ti/eindopdracht
 
 > Citas para ti is a single page webapp with inspirational webapp quotes for students who need a little extra motivation when they have a deadline or when they don't have inspiration for a project.
 
-*insert foto's eindproduct*
+<img width="500" alt="Screenshot 2022-03-08 at 15 23 08" src="https://user-images.githubusercontent.com/70900763/157256951-48886828-d8b6-436a-8fcd-12cb5815d1e6.png">
+https://gwenversteegh.github.io/citas-para-ti/eindopdracht/
 
 ## Features
 
