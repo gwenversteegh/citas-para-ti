@@ -1,40 +1,39 @@
 
-// 1. variables (aka bindings), on top of global cope
-export const endpoint = 'https://quote.api.fdnd.nl/v1/quote'
+// import quotes from API 
+const endpoint = 'https://quote.api.fdnd.nl/v1/quote'
 export const list = document.querySelector('ul:first-of-type')
 
 import { showLoadingState, hideLoadingState, showErrorState } from './states.js';
 
-// 2. the story
+
 showLoadingState ()
 getData()
 
 
-export function getData() {
-    const list = document.querySelector('ul')   //quoteList gebruik je verder nergens
+function getData() {
     fetch(endpoint).then(function(response) {
         return response.json()
-    })
-.then (quotes => {
-    hideLoadingState ()
-    quotes.data = quotes.data.slice(0,-5)
-    renderData (quotes)
 })
-.catch((error) => {  //de error parameter wordt niet gebruikt
-    console.log ("het gaat niet goed...")
-    hideLoadingState()
-    showErrorState()
+    .then (quotes => {
+        hideLoadingState ()
+        quotes.data = quotes.data.slice(0,-5)
+        renderData (quotes)
+})
+    .catch((error) => {  
+        console.log ("het gaat niet goed...")
+        hideLoadingState()
+        showErrorState(error)
 });
 
 }
 
 let id = 0;
 
-export function renderData(quotes){
+function renderData(quotes){
     quotes.data.forEach(data => {
     list.insertAdjacentHTML('beforeend', 
     `<li id=${id = id + 1}>
-        <img src='${data.avatar}' alt='profielfoto' onerror="this.style.display='none'" >
+        <img src='${data.avatar}' alt='profielfoto' onerror="this.src='./img/vervanging.jpg'" >
         <h2>${data.name}</h2>
         <p>${data.text}</p>
     </li>`)
@@ -43,7 +42,7 @@ export function renderData(quotes){
 ;
 
 const quotes = [
-    '#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8', '#9', '#10',
+    '#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8', '#9', '#10', '#11',
 ]
 
 button.onclick = function() {
@@ -54,9 +53,9 @@ button.onclick = function() {
     window.location.href = base_url + "/citas-para-ti/eindopdracht/" +  randomQuote
 }
 
-const hallo = document.querySelector("#hallo")
+const quoterandom = document.querySelector("#quoterandom")
 function randomQuotes(quotes) {
-    hallo.insertAdjacentHTML('beforeend', 
+    quoterandom.insertAdjacentHTML('beforeend', 
     `<li id=${id = 2}>
         <img src='${quotes.avatar}' alt='profielfoto' onerror="this.style.display='none'" >
         <h2>${quotes.name}</h2>
@@ -64,32 +63,3 @@ function randomQuotes(quotes) {
     </li>`)
 }
 
-// var button = document.getElementById("button");
-// var myarray = ["li"];
-
-// button.onclick = function() {
-//     alert(myarray[Math.floor(Math.random() * myarray.length)]);
-// };
-
-
-// document.getElementById('button');
-
-// //;addEventListener("click", myFunction());
-
-// function myFunction(randomQuotes) {
-//     return randomQuotes = list [Math.floor(Math.random()*list.length)];
-// }
-
-
-// setTimeout(() => {window.location.hash = '#1';}, 1000)
-// const liEl = document.querySelectorAll('ul li');
-// for(let i = 0; i < liEl.length; i++) {
-//     liEl[i].addEventListener('mouseenter', function() {
-//         console.log('hoi')
-//         let rect = liEl[i].getBoundingClientRect();
-//         if(rect.bottom > 0 && rect.bottom < 550) {
-//             window.location.hash = liEl[i].id;
-//         }
-    
-//     })
-// } 

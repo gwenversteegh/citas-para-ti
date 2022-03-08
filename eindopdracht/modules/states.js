@@ -11,8 +11,6 @@ export function hideLoadingState(){
     list.removeChild(list.firstElementChild);
 }
 
-
-
 export function showErrorState(){
     list.insertAdjacentHTML('afterbegin', 
         `<p>
