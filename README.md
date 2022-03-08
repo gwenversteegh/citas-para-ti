@@ -2,7 +2,7 @@
 
 
 ### link to my github pages:
-https://gwenversteegh.github.io/citas-para-ti/eindopdracht/index.html
+https://gwenversteegh.github.io/citas-para-ti/eindopdracht
 
 ## about
 
