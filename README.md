@@ -1,56 +1,46 @@
-# Web App From Scratch @cmda-minor-web 2021 - 2022
+# citas para ti!
 
-In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API, manipulated and finally shown in the UI of the App. You will learn to apply interface principles when building and testing the interface. With the gained knowledge you will be able to build interactive prototypes, based on a user story and real data. Also you will gain a better understanding of how API's, frameworks and libraries work.
 
-## Assignment
+### link to my github pages:
+https://gwenversteegh.github.io/citas-para-ti/eindopdracht/index.html
 
-- [Visitekaartje](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/main/course/week-1.md#1-visitekaartje): Ontwerp en maak met HTML, CSS en JS een visitekaartje.
-- [Teampagina](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/main/course/week-1.md#2-teampagina): Ontwerp en maak met je team een teampagina waarin je de verschillende visitekaartjes toont.
-- [Single Page App](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/master/course/week-2.md): Design and build a single page web app based on a User Story.
+## about
 
----
+> Citas para ti is a single page webapp with inspirational webapp quotes for students who need a little extra motivation when they have a deadline or when they don't have inspiration for a project.
 
-## Program
+*insert foto's eindproduct*
 
-| Planning | Maandag | Dinsdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1 - Hellooo 🤸](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/master/course/week-1.md) | Introduction + visitekaartje | Teampagina | Teambespreking |
-| [Week 2 - Hello API 🐒](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/master/course/week-2.md) | College + briefing opdracht | College + Work | Feedbackgesprekken |
-| Voorjaarsvakantie |  |  |  |
-| [Week 3 - Refactor 🛠](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/master/course/week-3.md)  | College + work  | College + work | Feedbackgesprekken  |
-| [Week 4 - Wrapping up 🎁](https://github.com/cmda-minor-web/web-app-from-scratch-2122/blob/master/course/week-4.md)  | College + work  | work | Beoordelingsgesprekken  |
+## Features
 
-## Best Practices
+### Loadingstate
+> When your internet is slow the page will load slowly. To make sure that the user knows that the quotes are on the way, I created a loading state where there will be explained that the user needs to be patience and that the quotes are comming. 
 
-All work during this course will be tested against our [Best Practices for JavaScript](https://github.com/cmda-minor-web/best-practices/blob/master/javascript.md).
+*insert foto loadingstate
 
-## Rubric
+### Errorstate
+> The error state appears when there goes something wrong with the input data from the API. You will be informed that there is an error and you will be asked to reload the page.
 
-Your efforts will be graded using a single point rubric (see below). You will have to pass the criterion (centre column) to pass the course. During the test you will be consulted and will be given feedback on things we think deficient and things we think are an improvement on the criterion.
+*insert foto errorstate
 
-| Deficiency | Criterion | Improvement |
-|:--|:--|:--|
-|  | *User Interface* - you design, build and test the user interface by applying interface design principles |  |
-|  | *Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI |  |
-|  | *Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html |  |
-|  | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.  |  |
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+## Activity diagram 
+*insert foto activity diagram
 
-<!-- ☝️ replace this description with a description of your own work -->
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+## How to install
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+> Github can be a pain in the ass if you don't understand how to use it. First download the Github dekstop app. This will save you a lot of time and trouble. When you're on my github page you will see a green button with "code". Click on this button and click on "open with github desktop". Now you can use my code on your on computer and make it your own. 
 
-<!-- Maybe a table of contents here? 📚 -->
+<img width="305" alt="Screenshot 2022-03-08 at 09 22 13" src="https://user-images.githubusercontent.com/70900763/157196877-86eb761c-f184-4eae-803f-39bbc56f5548.png"> <img width="380" alt="Screenshot 2022-03-08 at 09 23 28" src="https://user-images.githubusercontent.com/70900763/157196928-f4d6b20c-eb01-4fab-8648-f04ec7ef63c3.png">
 
-<!-- How about a section that describes how to install this project? 🤓 -->
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+## The API
+This is the API I used:
+https://quote.api.fdnd.nl/v1/quote 
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+In this API there are inspirational quotes about webdesign. When there are new quotes added they will appear in the single page webapp.
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+## Future plans
+- [ ] Filter option
+- [ ] Detail page
