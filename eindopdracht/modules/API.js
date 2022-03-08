@@ -51,7 +51,7 @@ button.onclick = function() {
 
     var base_url = window.location.origin;
 
-    window.location.href = base_url +  randomQuote
+    window.location.href = base_url + "/citas-para-ti/eindopdracht/" +  randomQuote
 }
 
 const hallo = document.querySelector("#hallo")
