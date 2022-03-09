@@ -41,6 +41,7 @@ function renderData(quotes){
 }
 ;
 
+// Als er meer komen, data lengte lezen (data.length)
 const quotes = [
     '#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8', '#9', '#10', '#11',
 ]
