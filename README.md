@@ -29,7 +29,7 @@ https://gwenversteegh.github.io/citas-para-ti/eindopdracht
 
 
 ## Activity diagram 
-*insert foto activity diagram
+<img width="703" alt="Screenshot 2022-03-08 at 16 59 38" src="https://user-images.githubusercontent.com/70900763/157275862-c8d7b785-8fb7-49bb-aa7a-d10e84db2d68.png">
 
 
 ## How to install
